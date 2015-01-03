@@ -1,4 +1,4 @@
-#signup-box{
+#signup-box {
     border: 1px solid gray;
     border-radius: 6px;
     background-color: white;
@@ -7,11 +7,11 @@
     margin-left: auto;
     margin-right: auto;
 }
-#signup-form{
+#signup-form {
     margin: 15px;
     line-height: 2;
 }
-#disclamer{
+#disclamer {
     width: 350px;
     font-size: 12px;
     margin-top: 166px;
@@ -21,7 +21,7 @@
     border-bottom: 2px solid lightgray;
     line-height: normal;
 }
-#signup-button{
+#signup-button {
     margin-top: 20px;
     border-radius: 6px;
     width: 150px;
@@ -32,8 +32,7 @@
     display: table-cell;
     horiz-align: center;
 }
-
-p{
+p {
     font-size: 12px;
     margin-top: 3px;
     line-height: normal;

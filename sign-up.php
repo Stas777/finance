@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-    <title>Регитсрация</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" type="text/css" href="css/signin-style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/signup-style.css" media="screen" />
 </head>

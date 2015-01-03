@@ -23,6 +23,11 @@
                } else {
                  $pass = test_input($_POST["pass"]);
                }
+                //if valid then redirect
+                if (($userErr == "") && ($userErr == $passErr)) {
+                    header("Location: http://localhost:63342/finance/main-page.php");
+                    exit();
+                }
             }
 
             function test_input($data) {

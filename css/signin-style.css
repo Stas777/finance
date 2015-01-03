@@ -1,10 +1,10 @@
 /*CSS File For Sign-In webpage*/
-#signin-body{
+#signin-body {
     background-image: url(../resources/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#signin-box{
+#signin-box {
     border: 1px solid gray;
     border-radius: 6px;
     background-color: white;
@@ -14,17 +14,17 @@
     margin-right: auto;
     margin-top: 120px;
 }
-#signin-header{
+#signin-header {
     background: #66a03b;
     color: white;
     padding: 10px;
     font-size: 20px;
 }
-#signin-form{
+#signin-form {
     margin: 15px;
     line-height: 2;
 }
-#signin-button{
+#signin-button {
     margin-top: 20px;
     border-radius: 6px;
     width: 100px;
@@ -33,20 +33,20 @@
     color: white;
     font-size: inherit;
 }
-input{
+input {
     background: #fdfbc0;
     border-radius: 6px;
     padding: 6px;
     font-size: inherit;
 }
-a{
+a {
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
     color: orange;
 }
-.error{
+.error {
     font-size: 14px;
     color: red;
     margin-top: -1px;

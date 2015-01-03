@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+a:link, a:visited {
+    display: block;
+    width: 150px;
+    color: white;
+    background-color: #66a03b;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+a:hover, a:active {
+    background-color: darkgreen;
+}
+#main-box {
+    width: 805px;
+    height: 670px;
+    background-color: white;
+    font-family: Geneva;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+}
+#main-text {
+    margin: 10px;
+    padding-top: 20px;
+    width: 550px;
+    border-right: 2px solid lightgrey;
+    float: left;
+}
+#last-news {
+    margin: 10px;
+    background-color: white;
+    font-size: 14px;
+    color: GrayText;
+}
