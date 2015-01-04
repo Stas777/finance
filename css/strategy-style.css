@@ -23,24 +23,38 @@ a:hover, a:active {
     background-color: darkgreen;
 }
 #main-box {
-    width: 805px;
-    height: 670px;
+    width: 900px;
+    height: 400px;
     background-color: white;
     font-family: Geneva;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2px;
 }
-#main-text {
-    margin: 10px;
-    padding-top: 20px;
-    width: 550px;
-    border-right: 2px solid lightgrey;
-    float: left;
+table {
+    border-collapse: collapse;
 }
-#last-news {
-    margin: 10px;
-    background-color: white;
-    font-size: 14px;
-    color: GrayText;
+table, td, th {
+    border: 1px solid black;
+}
+th {
+    font-size: small;
+    color: white;
+    padding: 5px;
+    background-color: #66a03b;
+}
+td {
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+    background-color: #DFFCCA;
+}
+.button {
+    border-radius: 6px;
+    width: 190px;
+    height:  30px;
+    background: #66a03b;
+    font-size: 16px;
+    color: white;
 }

@@ -5,52 +5,27 @@
         <link rel="stylesheet" type="text/css" href="css/signin-style.css" media="screen" />
     </head>
     <body id="signin-body">
-
         <?php
-            // define variables and set to empty values
-            $userErr = $passErr = "";
-            $user = $pass = "";
-
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-               if (empty($_POST["user"])) {
-                 $userErr = "Поле \"Username or Email\" обязательно для заполнения";
-               } else {
-                 $user = test_input($_POST["user"]);
-               }
-
-               if (empty($_POST["pass"])) {
-                 $passErr = "Поле \"Пароль\" обязательно для заполнения";
-               } else {
-                 $pass = test_input($_POST["pass"]);
-               }
-                //if valid then redirect
-                if (($userErr == "") && ($userErr == $passErr)) {
-                    header("Location: http://localhost:63342/finance/main-page.php");
-                    exit();
-                }
-            }
-
-            function test_input($data) {
-               $data = trim($data);
-               $data = stripslashes($data);
-               $data = htmlspecialchars($data);
-               return $data;
-            }
+        session_start();
+        if (isset($_SESSION['error'])) {
+            echo $_SESSION['error'];
+            //unset($_SESSION['error']);
+        }
         ?>
 
         <div id="signin-box">
             <div id="signin-header">
                 Вход
             </div>
-            <form id="signin-form" method="POST">
+            <form id="signin-form" method="POST" action="credentials-checking.php">
                 Username or Email<br>
-                <input id="user" type="text" name="user" size="45">
-                <span class="error">* <?php echo $userErr; ?></span>
+                <input id="user" type="text" required="required" name="user" size="45">
+                <span class="error">*</span>
                 <br>
                 Пароль &nbsp;&nbsp;&nbsp;
                 <a href="url">(забыли пароль)</a><br>
-                <input id="pass" type="password" name="pass" size="45">
-                <span class="error">* <?php echo $passErr;?></span>
+                <input id="pass" type="password" required="required" name="pass" size="45">
+                <span class="error">*</span>
                 <br>
                 <input id="signin-button" type="submit" name="submit" value="Вход">&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="sign-up.php">(Регистрация)</a><br>

@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <title>Главная страница</title>
     <link rel="stylesheet" type="text/css" href="css/signin-style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/mainpage-style.css" media="screen" />
@@ -9,9 +8,9 @@
 <body id="signin-body">
 
     <ul class="main-menu">
-        <li><a href="#home">Главная страница</a></li>
+        <li><a href="main-page.php">Главная страница</a></li>
         <li><a href="#news">Новости</a></li>
-        <li><a href="#strategy">Стратегии</a></li>
+        <li><a href="strategy.php">Стратегии</a></li>
         <li><a href="#progress">Достижения</a></li>
         <li><a href="#income">Доходы</a></li>
         <li><a href="#charges">Расходы</a></li>
