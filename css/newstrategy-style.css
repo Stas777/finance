@@ -1,0 +1,10 @@
+.field {clear:both; text-align:right;}
+label {float:left;}
+#button {
+    border-radius: 6px;
+    width: 300px;
+    height:  30px;
+    background: #66a03b;
+    font-size: 16px;
+    color: white;
+}

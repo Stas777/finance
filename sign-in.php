@@ -5,13 +5,15 @@
         <link rel="stylesheet" type="text/css" href="css/signin-style.css" media="screen" />
     </head>
     <body id="signin-body">
-        <?php
-        session_start();
-        if (isset($_SESSION['error'])) {
-            echo $_SESSION['error'];
-            //unset($_SESSION['error']);
-        }
-        ?>
+        <div class="error" style="font-size: larger; text-align: center; margin-top: 50px">
+            <?php
+            session_start();
+            if (isset($_SESSION['error'])) {
+                echo $_SESSION['error'];
+                unset($_SESSION['error']);
+            }
+            ?>
+        </div>
 
         <div id="signin-box">
             <div id="signin-header">

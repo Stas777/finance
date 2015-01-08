@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
+<head>
     <title>Стратегии</title>
     <link rel="stylesheet" type="text/css" href="css/signin-style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/strategy-style.css" media="screen" />
+    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 <body id="signin-body">
     <nav>
@@ -59,18 +59,16 @@
         </div>
         <div>
             <button type="button" class="button">Изменить стратегию</button>&nbsp;
-            <button type="button" class="button">Новая стратегия</button>
+            <button type="button" class="button" onclick="newStrategyPopup()">Новая стратегия</button>
 
             <div style="font-size: smaller; color: GrayText; margin: 20px">
                 Данная стратегия вычитает из регулярного ежемесячного дохода обязательные платежи
                 (такие как: коммунальные плаиежи, оплата услуг связи, оплата за обучение и т.д.)
                 и предлагает пользователю из оставшейся суммы тратить 20% на питание, 15% на досуг,
-                10% на одежду, 15-20% на здоровье и спорт.
+                10% на одежду, 15-20% на здоровье и спорт.<br>
             </div>
         </div>
     </div>
-
-
 
 </body>
 </html>
