@@ -9,7 +9,7 @@
     border-radius: 6px;
     background-color: white;
     font-family: Geneva;
-    width: 500px;
+    width: 440px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 120px;
@@ -21,11 +21,12 @@
     font-size: 20px;
 }
 #signin-form {
-    margin: 15px;
-    line-height: 2;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 #signin-button {
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 6px;
     width: 100px;
     height:  40px;

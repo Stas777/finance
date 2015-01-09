@@ -24,7 +24,7 @@ VALUES ('$_POST[strategy_name]',$user_ID,'$_POST[income]','$_POST[outlay]','$_PO
   '$_POST[exp_date]',$credits,$required_payments)";
 
 if ($con->query($sql) === TRUE) {
-    header("location: main-page.php");
+    echo "<script>window.close();</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $con->error;
 }

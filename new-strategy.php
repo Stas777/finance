@@ -12,7 +12,7 @@
             Создание новой стратегии
         </div>
 
-        <form id="signup-form" method="POST" style="width: 550px; line-height: 300%" action="add-strategy.php">
+        <form id="signup-form" method="POST" style="width: 550px; line-height: 300%" action="add-strategy.php";>
             <div class="field">
                 <label for="n">Размер постоянного дохода<span class="error">*</span>:</label>
                 <input type="number" id="n" required="required" name="income" size="45">

@@ -7,17 +7,23 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$query = "INSERT INTO users (username, password, email)
-VALUES ('$_POST[user]', '$_POST[pass]', '$_POST[email]')";
-
-$mysqli->query($query);
-
 //Start the session
 session_start();
-//Store the user_ID in the session
-$_SESSION['user_ID'] = $mysqli->insert_id;
 
-header("location: main-page.php");
+$query = "INSERT INTO users (username, password, email)
+  VALUES ('$_POST[user]', '$_POST[pass]', '$_POST[email]')";
+
+//$mysqli->query($query);
+if ($mysqli->query($query) === TRUE) {
+    //Store the user_ID in the session
+    $_SESSION['user_ID'] = $mysqli->insert_id;
+
+    header("location: main-page.php");
+}
+else {
+    $_SESSION['error'] = "Пользователь с заданным Username уже существует.";
+    header("location: sign-in.php");
+}
 
 $mysqli->close();
 ?>

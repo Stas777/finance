@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","root","finance");
+$con = mysqli_connect("localhost","root","root","finance");
 
 // Check connection
 if (mysqli_connect_errno()) {
@@ -10,8 +10,8 @@ if (mysqli_connect_errno()) {
 session_start();
 
 // Perform queries
-$result = mysqli_query($con,"SELECT ID FROM users WHERE username = '$_POST[user]' AND password = '$_POST[pass]' ");
-$count=mysqli_num_rows($result);
+$result = mysqli_query($con,"SELECT * FROM users WHERE username = '$_POST[user]' AND password = '$_POST[pass]' ");
+$count = mysqli_num_rows($result);
 
 // redirect if credentials are valid
 if ($count == 1) {

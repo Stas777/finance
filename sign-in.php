@@ -23,9 +23,9 @@
                 Username or Email<br>
                 <input id="user" type="text" required="required" name="user" size="45">
                 <span class="error">*</span>
-                <br>
+                <br><br>
                 Пароль &nbsp;&nbsp;&nbsp;
-                <a href="url">(забыли пароль)</a><br>
+                <!--<a href="url">(забыли пароль)</a><br>-->
                 <input id="pass" type="password" required="required" name="pass" size="45">
                 <span class="error">*</span>
                 <br>
